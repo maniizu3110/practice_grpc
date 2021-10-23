@@ -1,5 +1,5 @@
 gen:
-	protoc -Iproto --go_out=. proto/*.proto
+	protoc --proto_path=proto  --go_out=. proto/*.proto
 
 clean:
 	rm pb/*.go
