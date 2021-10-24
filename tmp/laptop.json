@@ -1,27 +1,27 @@
 {
-  "id": "3aaf88f1-ae25-4456-ae42-e2540d3d816c",
+  "id": "80049af4-2ef6-4235-a9a6-bfd22c65d79d",
   "brand": "Dell",
-  "name": "XPS",
+  "name": "Vostro",
   "cpu": {
-    "brand": "Intel",
-    "name": "Core i5-9400F",
-    "number_cores": 2,
-    "number_threads": 2,
-    "min_ghz": 3.374841259673112,
-    "max_ghz": 4.721275067264346
+    "brand": "AMD",
+    "name": "Ryzen 5 PRO 3500U",
+    "number_cores": 5,
+    "number_threads": 7,
+    "min_ghz": 2.6245936691270084,
+    "max_ghz": 3.0304118000670206
   },
   "ram": {
-    "value": "48",
+    "value": "21",
     "uint": 0
   },
   "gpus": [
     {
-      "brand": "Nvidia",
-      "name": "GTX 1070",
-      "min_ghz": 1.045128921977581,
-      "max_ghz": 1.8736932957292038,
+      "brand": "AMD",
+      "name": "RX 590",
+      "min_ghz": 1.1936188474958958,
+      "max_ghz": 1.9261195658297834,
       "memory": {
-        "value": "2",
+        "value": "5",
         "uint": 0
       }
     }
@@ -30,33 +30,33 @@
     {
       "driver": 2,
       "memory": {
-        "value": "342",
+        "value": "308",
         "uint": 0
       }
     },
     {
       "driver": 1,
       "memory": {
-        "value": "5",
+        "value": "6",
         "uint": 0
       }
     }
   ],
   "screen": {
-    "size_inch": 14.466114,
+    "size_inch": 16.093773,
     "resolution": {
-      "width": 3137,
-      "height": 1765
+      "width": 7632,
+      "height": 4293
     },
     "panel": 1,
-    "multitouch": false
+    "multitouch": true
   },
   "keyboard": {
-    "layout": 3,
-    "backlit": true
+    "layout": 2,
+    "backlit": false
   },
-  "weight_kg": 2.7856636661307546,
-  "price_usd": 1668.2124157416604,
-  "release_year": 2015,
-  "updated_at": "2021-10-24T02:18:06.058817Z"
+  "weight_kg": 2.181892630733146,
+  "price_usd": 2086.03341730109,
+  "release_year": 2017,
+  "updated_at": "2021-10-24T02:56:35.155632Z"
 }
