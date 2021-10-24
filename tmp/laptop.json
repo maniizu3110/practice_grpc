@@ -1,0 +1,62 @@
+{
+  "id": "3aaf88f1-ae25-4456-ae42-e2540d3d816c",
+  "brand": "Dell",
+  "name": "XPS",
+  "cpu": {
+    "brand": "Intel",
+    "name": "Core i5-9400F",
+    "number_cores": 2,
+    "number_threads": 2,
+    "min_ghz": 3.374841259673112,
+    "max_ghz": 4.721275067264346
+  },
+  "ram": {
+    "value": "48",
+    "uint": 0
+  },
+  "gpus": [
+    {
+      "brand": "Nvidia",
+      "name": "GTX 1070",
+      "min_ghz": 1.045128921977581,
+      "max_ghz": 1.8736932957292038,
+      "memory": {
+        "value": "2",
+        "uint": 0
+      }
+    }
+  ],
+  "storages": [
+    {
+      "driver": 2,
+      "memory": {
+        "value": "342",
+        "uint": 0
+      }
+    },
+    {
+      "driver": 1,
+      "memory": {
+        "value": "5",
+        "uint": 0
+      }
+    }
+  ],
+  "screen": {
+    "size_inch": 14.466114,
+    "resolution": {
+      "width": 3137,
+      "height": 1765
+    },
+    "panel": 1,
+    "multitouch": false
+  },
+  "keyboard": {
+    "layout": 3,
+    "backlit": true
+  },
+  "weight_kg": 2.7856636661307546,
+  "price_usd": 1668.2124157416604,
+  "release_year": 2015,
+  "updated_at": "2021-10-24T02:18:06.058817Z"
+}
