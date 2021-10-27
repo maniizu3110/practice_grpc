@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"log"
+	"time"
 
 	"github.com/google/uuid"
 	"gitlab.com/techschool/pcbook/gen/pb"
@@ -21,11 +22,11 @@ type LaptopServer struct {
 
 func NewLaptopServer(store LaptopStore) *LaptopServer {
 	return &LaptopServer{
-		Store:store,
+		Store: store,
 	}
 }
 
-func (server *LaptopServer) CreateLaptop(ctx context.Context,req *pb.CreateLaptopRequest) (*pb.CreateLaptopResponse, error) {
+func (server *LaptopServer) CreateLaptop(ctx context.Context, req *pb.CreateLaptopRequest) (*pb.CreateLaptopResponse, error) {
 	laptop := req.GetLaptop()
 	log.Printf("receive a create-laptop request with id: %s", laptop.Id)
 	if len(laptop.Id) > 0 {
@@ -42,6 +43,21 @@ func (server *LaptopServer) CreateLaptop(ctx context.Context,req *pb.CreateLapto
 		laptop.Id = id.String()
 
 	}
+
+	
+	//some heavy processing
+	time.Sleep(6 * time.Second)
+
+	if ctx.Err() == context.Canceled {
+		log.Print("request is canceled")
+		return nil, status.Errorf(codes.Canceled, "request is canceled")
+	}
+	
+	if ctx.Err() == context.DeadlineExceeded {
+		log.Print("deadline is exceeded")
+		return nil, status.Error(codes.DeadlineExceeded, "deadline is exceeded")
+	}
+	
 	//save the laptop to db
 	err := server.Store.Save(laptop)
 	if err != nil {
