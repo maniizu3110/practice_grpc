@@ -5,7 +5,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/require"
-	"gitlab.com/techschool/pcbook/pb"
+	"gitlab.com/techschool/pcbook/gen/pb"
 	"gitlab.com/techschool/pcbook/sample"
 	"gitlab.com/techschool/pcbook/serializer"
 )

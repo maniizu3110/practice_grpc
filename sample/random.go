@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"gitlab.com/techschool/pcbook/pb"
+	"gitlab.com/techschool/pcbook/gen/pb"
 )
 
 func init() {
